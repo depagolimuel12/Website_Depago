@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Kabayan, Benguet | Gateway to the Mystical Highlands</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <i class="fas fa-map-marker-alt"></i> Cordillera Highlands
+      </div>
+
+      <p style="font-size: 1.2rem; margin: 0.8rem 0 0.2rem; font-weight: 500;">
+        Physical Kabayan, Benguet
+      </p>
+
+      <p style="max-width: 500px; opacity: 0.9; margin: 0.6rem 0 0;">
+        Where ancient mummies guard misty peaks and emerald lakes breathe legends.
+      </p>
+
+      <div class="hero-destination-tag">
+        <span class="dest-badge"><i class="fas fa-hiking"></i> Mt. Pulag</span>
+        <span class="dest-badge"><i class="fas fa-water"></i> Four Mystical Lakes</span>
+        <span class="dest-badge"><i class="fas fa-skull"></i> Fire Mummies</span>
+        <span class="dest-badge"><i class="fas fa-mountain"></i> Mt. Tabayoc</span>
+      </div>
+
+      <a href="#destinations" class="btn-outline"
+        style="margin-top: 1.8rem; display: inline-block; background: white; color:#2c5e3a; border: none; font-weight: 700;">
+        Explore wonders →
+      </a>
+    </div>
+
+    <div style="background: rgba(255,255,235,0.1); border-radius: 40px; padding: 0.8rem 1.2rem; backdrop-filter: blur(4px);">
+      <i class="fas fa-cloud-moon"></i> "Mystical highlands"
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="info-grid">
+    <div class="info-card">
+      <i class="fas fa-landmark"></i>
+      <h3>History & Heritage</h3>
+      <p>
+        Kabayan, Benguet is a municipality renowned for its ancient Ibaloi traditions and centuries-old mummy caves.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <i class="fas fa-users"></i>
+      <h3>People & Culture</h3>
+      <p>
+        Home to the Kalinga, Ibaloi, Ifugao, and Bontoc tribes, Kabayan pulses with vibrant festivals.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section id="destinations" class="destinations-section">
+  <div class="container">
+
+    <div class="dest-header">
+      <h2 class="section-title">Best Destinations</h2>
+      <p style="max-width: 600px; margin: 0.8rem auto 0; color: #4a5a52;">
+        Journey through ancestral peaks, sacred lakes, and timeless burial grounds
+      </p>
+    </div>
+
+    <div class="destinations-grid">
+
+      <div class="destination-card">
+        <div class="card-img"
+          style="background-image: linear-gradient(145deg, #2f664a, #6f9e7c), url('https://placehold.co/600x400/3b7552/ffffff?text=Mt.+Pulag'); background-blend-mode: overlay; background-size: cover;">
+        </div>
+
+        <div class="card-content">
+          <span class="location-tag"><i class="fas fa-map-pin"></i> Highest peak in Luzon</span>
+
+          <h3><i class="fas fa-mountain"></i> Mt. Pulag</h3>
+
+          <div class="desc">
+            Majestic mountain with a legendary “sea of clouds”.
+          </div>
+
+          <a href="#" class="explore-link">
+            Discover trail <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="#"
+        style="background: #2c5e3a; color: white; padding: 0.7rem 2rem; border-radius: 40px; font-weight: 500; display: inline-block;">
+        <i class="fas fa-compass"></i> Plan your Kabayan adventure
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="identity-bar">
+  <span><i class="fas fa-paw"></i> Physical</span>
+  <span><i class="fas fa-tree"></i> Kabayan</span>
+  <span><i class="fas fa-mountain-sun"></i> Benguet</span>
+</div>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>About Us</h4>
+
+        <p>
+          Kabayan Tourism & Heritage Office — promoting sustainable travel.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>
+        © 2026 Municipality of Kabayan, Benguet
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  (function () {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+
+        if (targetId === "#" || targetId === "") return;
+
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    console.log("Kabayan website ready — mountains are calling");
+  })();
+</script>
+
+</body>
+</html>
+<script>
+(function () {
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener('click', function (e) {
+
+      const targetId = this.getAttribute('href');
+
+      if (targetId === "#" || targetId === "") {
+        e.preventDefault();
+        return;
+      }
+
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+
+    });
+
+  });
+
+  document.querySelectorAll('.explore-link').forEach(link => {
+
+    link.addEventListener('click', function (e) {
+
+      e.preventDefault();
+
+      const cardTitle = this.closest('.card-content')
+        .querySelector('h3')
+        .innerText;
+
+      alert("Opening: " + cardTitle);
+
+    });
+
+  });
+
+  const planBtn = document.querySelector('.fa-compass')?.parentElement;
+
+  if (planBtn) {
+
+    planBtn.addEventListener('click', function (e) {
+
+      e.preventDefault();
+
+      alert("Kabayan adventure planner coming soon!");
+
+    });
+
+  }
+
+  document.querySelectorAll('.footer a').forEach(link => {
+
+    link.addEventListener('click', function (e) {
+
+      const href = this.getAttribute('href');
+
+      if (href === "#") {
+
+        e.preventDefault();
+
+        const text = this.innerText.trim();
+
+        alert(text + " page coming soon!");
+
+      }
+
+    });
+
+  });
+
+  const socialMessages = [
+    "Facebook page coming soon!",
+    "Twitter page coming soon!",
+    "Instagram page coming soon!",
+    "YouTube page coming soon!",
+    "Tumblr page coming soon!",
+    "Pinterest page coming soon!",
+    "Flickr page coming soon!"
+  ];
+
+  document.querySelectorAll('.social-icons a').forEach((icon, index) => {
+
+    icon.addEventListener('click', function (e) {
+
+      e.preventDefault();
+
+      alert(socialMessages[index]);
+
+    });
+
+  });
+
+  document.querySelectorAll('.destination-card').forEach(card => {
+
+    card.style.cursor = 'pointer';
+
+    card.addEventListener('click', function () {
+
+      const title = this.querySelector('h3').innerText;
+
+      alert("Exploring " + title);
+
+    });
+
+  });
+
+  document.querySelectorAll('.dest-badge').forEach(badge => {
+
+    badge.style.cursor = 'pointer';
+
+    badge.addEventListener('click', function () {
+
+      alert(this.innerText + " information coming soon!");
+
+    });
+
+  });
+
+  document.querySelectorAll('.info-card').forEach(card => {
+
+    card.style.cursor = 'pointer';
+
+    card.addEventListener('click', function () {
+
+      const title = this.querySelector('h3').innerText;
+
+      alert(title + " details coming soon!");
+
+    });
+
+  });
+
+  document.querySelectorAll('.identity-bar span').forEach(item => {
+
+    item.style.cursor = 'pointer';
+
+    item.addEventListener('click', function () {
+
+      alert(this.innerText + " section selected!");
+
+    });
+
+  });
+
+  console.log("Kabayan website ready — all buttons working");
+
+})();
+</script>
